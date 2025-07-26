@@ -1,0 +1,59 @@
+class TypeA
+{
+    public int A {get; set; }
+    public new void Fun01()
+    {
+     Console WriteLine(value: "Fun01 From TypeA");
+    }
+
+     public override void Fun02()
+    {
+     Console WriteLine(value: $"A: {A]");
+    }
+}
+class TypeB : TypeA
+{
+    public int B { get; set; }
+
+    public new void Fun01()
+     {
+    Console. WriteLine(:"Fun01 From TypeB");
+     }
+    public override void Fun02()
+     {
+     Console WriteLine(value: $"A: {A}, B: {B}")
+     }
+}
+class TypeC : TypeB
+{
+    public int C { get; set; }
+
+    public new void Fun01()
+     {
+    Console. WriteLine(:"Fun01 From TypeC");
+     }
+    public override void Fun02()
+     {
+     Console WriteLine(value: $"A: {A}, B: {B}, C : {C}")
+     }
+}
+
+class TypeD : TypeC
+{
+    public int D { get; set; }
+
+    public new void Fun01()
+     {
+    Console. WriteLine(:"Fun01 From TypeD");
+     }
+    public override void Fun02()
+     {
+     Console WriteLine(value: $"A: {A}, B: {B}, C : {C} , D : {D} ")
+     }
+}
+
+Access Modifiers 
+
+  Protected : The member is accessible in its own class and by derived classes  even if they are in different assemblies.
+  Private Protected : Accessible in derived classes in the same assembly
+  internal Protected : Any class in the same assembly , Any derived class in other assembly
