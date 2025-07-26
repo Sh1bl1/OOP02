@@ -52,3 +52,13 @@
 // these have the same NAME but with different Signature
 // (count - type - order) parameters
 
+// Vid 6 
+
+// 3.2. Polymorphism Methods (Functions) Overriding
+ // override or hide
+// There are more than one functions [in different class] these have the same Name and
+// the same signature but with different behaviour
+// Must be Not Private and Virtual
+//  How to apply override
+// 1. Apply override using 'new' Keyword
+// 2. Apply override using 'override' Keyword
